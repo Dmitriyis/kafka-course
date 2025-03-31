@@ -37,6 +37,8 @@ Producer:
 6. max.in.flight.requests.per.connection = 3 (указываем, что Producer может параллельно обрабатывать 3 неподтверждённых сообщения от брокера Kafka).
 
 Consumer:
+
+
 0. singleMessageConsumer:
     1. key.deserializer = StringDeserializer.class (указываем, что ключ топика будет десериализован с использованием типа String).
     2. value.deserializer = ErrorHandlingDeserializer.class (обёртка над основным десериализатором, для возможности обработки ошибок десериализации)
