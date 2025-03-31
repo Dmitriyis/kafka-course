@@ -1,0 +1,12 @@
+spring:
+  kafka:
+    bootstrap-servers: localhost:9094
+    properties:
+      schema.registry.url: http://localhost:8081
+
+server:
+  port: 8085
+
+logging:
+  level:
+    com.example.kafka: DEBUG
