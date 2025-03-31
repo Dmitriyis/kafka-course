@@ -132,7 +132,7 @@ public class KafkaConfig {
                             ", Ключ=" + record.key() +
                             ", Ошибка=" + exception.getCause());
                 },
-                new FixedBackOff(1000L, 2)
+                new FixedBackOff(2000L, 5)
         );
 
         handler.setAckAfterHandle(false);
